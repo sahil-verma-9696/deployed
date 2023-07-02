@@ -25,22 +25,21 @@
                     <div class="rod"></div>
                 </button>
 
-                <div><input type="image" src="../images/logo.png" alt="" id="logo" class="section-1-cont"></div>
+                <div><input type="image" src="bg.png" alt="" id="logo" class="section-1-cont"></div>
             </div>
 
             <!-- another links -->
             <div id="pages" class="section-2">
 
-                <a href="#">About</a>
-                <a href="#">Services</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
 
             </div>
 
         </div>
 
         <!-- -----------------------   the main content ----------------- -->
-
-        <div class="main">
+        <div id="main" class="main">
 
             <!-- the modes of matrix -->
             <select name="modes" id="mode" class="main-heading">
@@ -56,7 +55,7 @@
                 <h2 class=" secMat-text order-text" style="display: inline;">Order</h2>
                 <h2 class="secMat-text order-text">P - Matirx</h2>
 
-                <input type="number" id="p-row" class="order" placeholder="Row" onkeyup="primRowMove()">
+                <input type="number" id="p-row" class="order" placeholder="Row" onkeyup ="primRowMove()">
 
                 <p class="order-text" style="display: inline;">x</p>
 
@@ -70,11 +69,13 @@
                 
                 <p class="secMat-text order-text">x</p>
 
-                <input type="number" id="s-column" class="order" placeholder="Column" onkeyup="secondColMove()">
+                <input type="number" id="s-column" class="order" placeholder="Column" onkeyup="secondColMove() ">
 
                 <br>
                 
-                <button id="inputMat" class="enter-ans" onclick="inputMatForm()">Enter</button>
+                <button id="inputMat" class="enter-ans" onclick="enterFun()">Enter</button>
+
+                
             </div>
 
             <br>
@@ -86,6 +87,7 @@
                     <div id="primaryMat">
 
                     </div>
+                    <button class="enter-ans" onclick="prevAnsewerAtPrimary()">Prev Answer</button>
                 </div>
 
                 <div id="operator-div">
@@ -98,30 +100,55 @@
                     <div id="secondryMat">
 
                     </div>
+                    <button class="enter-ans" onclick="prevAnsewerAtSecondry()">Prev Answer</button>
                 </div>
             </div>
 
+            <br>
+            <!-- the answer button -->
             <div>
-                <button class="enter-ans" onclick="answer()">Answer</button>
+                <button class="enter-ans" onclick="answerFun()">Answer</button>
             </div>
+            
             <br>
 
             <div id="answerMat">
 
             </div>
 
+            <button type="reset" class="enter-ans" onclick="window.location.reload()">Clear All</button>
+
         </div>
 
-        <!-- -----------------------   the Animation ----------------- -->
+        <!-- -----------------------   the About ----------------- -->
+        <div id="about" class="main">
+            <h2>ABOUT</h2>
+            <br>
+            <p>
+               hii !!! Welcome
+            </p>
+            <p>
+                this my testing version matrix calculator.
+            </p>
+            <p>
+                In calculator you are able to perform all matrix operation easly
+            </p>
+        </div>
+        <div id="services" class="main">
+            <h2>SERVICES</h2>
+            <br>
+            <p>comming soon ...</p>
+           
+        </div>
 
     </div>
 
 
 </body>
 <!-- <script src="/mark6.js"></script> -->
-<script src="mark8.js"></script>
-<script src="mark9.js"></script>
-<script src="allEventHandel.js"></script>
+<!-- <script src="/mark8.js"></script> -->
+<script src="/mark9.js"></script>
+<script src="/allEventHandel.js"></script>
 
 
 </html>

@@ -54,7 +54,7 @@ body{
 
 #logo{
     width: 1rem;
-    height: 5rem;
+    height: rem;
     box-shadow: 0 0 .5rem cyan;
     border-radius: 50%;
 }
